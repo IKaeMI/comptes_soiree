@@ -1,0 +1,21 @@
+{
+  "name": "Comptes de Soirée & Secret Santa",
+  "short_name": "Comptes Soirée",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1120",
+  "theme_color": "#0b1120",
+  "icons": [
+    {
+      "src": "https://em-content.zobj.net/source/apple/391/party-popper_1f389.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://em-content.zobj.net/source/apple/391/party-popper_1f389.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
