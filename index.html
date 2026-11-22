@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Comptes Soirée">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="https://em-content.zobj.net/source/apple/391/party-popper_1f389.png">
+  <title>Comptes de Soirée & Secret Santa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body, iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #0b1120;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <iframe id="appFrame" allow="clipboard-read; clipboard-write"></iframe>
+  <script>
+    const BASE_URL = "https://script.google.com/macros/s/AKfycbzz7qXpgMbGKTchPgvc6XTW-kW8wg4nU1RuJ-_x4Th7QDb3l5HHN4ZqZdzy2gNTpkj0/exec";
+    const search = window.location.search || "";
+    const joiner = BASE_URL.indexOf("?") === -1 ? "?" : "&";
+    const targetUrl = search ? BASE_URL + joiner + search.slice(1) : BASE_URL;
+    document.getElementById("appFrame").src = targetUrl;
+  </script>
+</body>
+</html>
